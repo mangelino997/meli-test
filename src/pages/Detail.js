@@ -35,17 +35,9 @@ export const Detail = ({ category }) => {
                     setItemDetail(res.data)
                 })
                 .catch(error => {
+                    const {response} = error
                     setLoading(false)
-                    switch (error.response.status) {
-                        case 400: setError('Parámetros incorrectos')
-                            break
-                        case 500: setError('Error interno del servidor')
-                            break
-                        case 404: setError('El ítem no existe')
-                            break;
-                        default:
-                            break;
-                    }
+                    setError(response.data.message)
                 })
         }
     }, [itemId])

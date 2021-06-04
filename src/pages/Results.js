@@ -19,35 +19,31 @@ export const Results = ({ handleChangeCategory }) => {
         let search = query.get('search')
         setItemName(search)
     }, [query])
-
+    
     useEffect(() => {
         if (result)
-            setItemCategory(result.categories)
+        setItemCategory(result.categories)
     }, [result])
-
+    
     useEffect(() => {
         handleChangeCategory(itemCategory)
     }, [itemCategory])
-
+    
     useEffect(() => {
+        setError(null)
         setLoading(true)
         if (itemName) {
             itemsApi.getItems(itemName)
                 .then(res => {
                     setLoading(false)
                     setResult(res.data)
+                    if (res.data && res.data.items.length == 0)
+                        setError('Sin resultados.')
                 })
-                .catch(err => {
+                .catch(error => {
+                    const {response} = error
                     setLoading(false)
-                    switch (error.response.status) {
-                        case 400: setError('Parámetros incorrectos')
-                            break
-                        case 500: setError('Error interno del servidor')
-                            break
-                        case 404: setError('El ítem no existe')
-                            break
-                        default: break
-                    }
+                    setError(response.data.message)
                 })
         }
     }, [itemName])
