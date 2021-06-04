@@ -3,6 +3,9 @@
     width:400px;
     height: 39px;
 }
+input:focus{
+  outline: none;
+}
 .nav-search-input{
     width: 340px;
     height: 39px;
@@ -11,10 +14,38 @@
     border: 0 rgba(0,0,0,.2);
     padding: 7px 60px 9px 15px;
 }
+.nav-search-input:focus{
+    text-decoration: none;
+}
 .nav-search-btn{
     width: 60px;
     height: 39px;
     padding-top: 0px;
     cursor: pointer;
     border: unset;
+    float: right;
 }
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: left;
+    margin: auto;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }

@@ -9,6 +9,7 @@
     background-color: #FFF159;
     padding: 15px;
     text-align: center;
+    width: 100%;
 }
 .section {
     display: -webkit-flex;

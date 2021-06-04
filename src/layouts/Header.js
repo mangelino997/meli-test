@@ -1,14 +1,14 @@
 import React from 'react'
 import { BoxSearch } from '../components/boxSearch'
-import './layouts.css'
+import './styles.css'
 
 export const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="nav-skip-to-main-content">
-                <div className="nav-logo inline-box" />
-                <BoxSearch/>
+                <a className="nav-logo inline-box" href="/"/>
+                <BoxSearch />
             </div>
-        </div>
+        </header>
     )
 }

@@ -4,7 +4,6 @@ const path = 'items';
 
 export const itemsApi ={
     getItems: function (query) {
-        console.log(query)
         return api.get(`${path}?search=${query}`);
     },
     getItemDescription: function (id) {
