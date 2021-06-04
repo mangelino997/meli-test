@@ -23,7 +23,6 @@ export const AppRoute = () => {
                 <main>
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        {/* <Route exact path="/items" component={Results} /> */}
                         <CustomRoute exact path="/items/:id" component={Detail} category={category}/>
                         <CustomRoute exact path="/items" component={Results} handleChangeCategory={handleChangeCategory}/>
                         <Route path="*" component={NotFound} />
