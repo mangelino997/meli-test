@@ -12,7 +12,7 @@ export const Breadcrumb = ({ itemCategory }) => {
         <div className="center width-90-percent">
             <ul className="breadcrumb">
                 {category && category.map(element => (
-                <li key={element.id}><a href="#">{element.name}</a></li>
+                <li key={element.id}><a href={`${process.env.PATH_PREFIX}/`}>{element.name}</a></li>
                 ))}
             </ul>
         </div>
