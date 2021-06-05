@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <header className="header">
             <div className="nav-skip-to-main-content">
-                <Link to={`${process.env.PATH_PREFIX}/`} className="nav-logo inline-box"/>
+                <a className="nav-logo inline-box" href={`${process.env.PATH_PREFIX}/`}></a>
                 <BoxSearch />
             </div>
         </header>
