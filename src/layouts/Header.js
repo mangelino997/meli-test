@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { BoxSearch } from '../components/boxSearch'
 import './styles.css'
 
