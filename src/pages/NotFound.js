@@ -8,7 +8,7 @@ export const NotFound = () => {
             <img src={imageNotFound} alt="Página no encontrada" width="300" height="400" />
             <div>
                 <p>404 - Página no encontrada</p>
-                <Link to={`${process.env.PATH_PREFIX}/`} >
+                <Link to={`/`} >
                     <button className="button">Volver</button>
                 </Link>
             </div>
