@@ -23,7 +23,7 @@ export const BoxSearch = () => {
 
     return (
         <div className="box-search inline-box">
-            <form >
+            <form className="form-flex">
                 <input type="search" className="nav-search-input"
                  placeholder="Nunca dejes de comprar" aria-label="Ingresá lo que quieras encontrar"
                   autoFocus tabIndex="2" autoCapitalize="off" autoCorrect="off" maxLength="120"
