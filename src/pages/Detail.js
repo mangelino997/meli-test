@@ -22,7 +22,6 @@ export const Detail = ({ category }) => {
     }, [id])
 
     useEffect(() => {
-        console.log(category)
         setItemCategory(category)
     }, [category])
 
