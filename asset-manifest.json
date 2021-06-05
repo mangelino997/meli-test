@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/meli-test-frontend/static/css/main.6158ff02.chunk.css",
-    "main.js": "/meli-test-frontend/static/js/main.8c4f6d59.chunk.js",
-    "main.js.map": "/meli-test-frontend/static/js/main.8c4f6d59.chunk.js.map",
+    "main.css": "/meli-test-frontend/static/css/main.66213c6d.chunk.css",
+    "main.js": "/meli-test-frontend/static/js/main.9c6dcbf9.chunk.js",
+    "main.js.map": "/meli-test-frontend/static/js/main.9c6dcbf9.chunk.js.map",
     "runtime-main.js": "/meli-test-frontend/static/js/runtime-main.a4a40e33.js",
     "runtime-main.js.map": "/meli-test-frontend/static/js/runtime-main.a4a40e33.js.map",
     "static/js/2.f01b624b.chunk.js": "/meli-test-frontend/static/js/2.f01b624b.chunk.js",
     "static/js/2.f01b624b.chunk.js.map": "/meli-test-frontend/static/js/2.f01b624b.chunk.js.map",
     "index.html": "/meli-test-frontend/index.html",
-    "static/css/main.6158ff02.chunk.css.map": "/meli-test-frontend/static/css/main.6158ff02.chunk.css.map",
+    "static/css/main.66213c6d.chunk.css.map": "/meli-test-frontend/static/css/main.66213c6d.chunk.css.map",
     "static/js/2.f01b624b.chunk.js.LICENSE.txt": "/meli-test-frontend/static/js/2.f01b624b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a4a40e33.js",
     "static/js/2.f01b624b.chunk.js",
-    "static/css/main.6158ff02.chunk.css",
-    "static/js/main.8c4f6d59.chunk.js"
+    "static/css/main.66213c6d.chunk.css",
+    "static/js/main.9c6dcbf9.chunk.js"
   ]
 }
